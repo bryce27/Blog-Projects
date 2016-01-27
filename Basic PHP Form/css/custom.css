@@ -1,0 +1,68 @@
+#input_column input{
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    margin-left: 6px;
+}
+
+#submit_btn {
+    width: 200px;
+    margin-left: 85px;
+    margin-bottom: 50px;
+}
+
+#input_column tr {
+    height: 37px;
+}
+
+#input_column {
+    margin-left: 10px;
+    float: left;
+    width: 70px;
+}
+
+.statements{
+    width: 370px;
+    float: left;
+}
+
+h3 {
+    margin-left: 85px;
+}
+
+#instructions {
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+}
+
+#numbers {
+    position: fixed;
+}
+
+
+#total {
+    margin-top: 1040px;
+    width: 100px;
+    height: 30px;
+
+}
+
+#total input {
+    display: inline;
+    width: 50px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#explanation {
+    width: 260px;
+    height: 210px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 877px;
+}
+
+span {
+    font-weight: bold;
+}
