@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+   <script src="sources/jquery-1.11.3.js"></script>
+   <script src="sources/angular.min.js"></script>
+   <script src="myapp.js"></script>
+   <link rel="stylesheet" type="text/css" href="sources/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="myapp">
+   <div ng-controller="index" id="input">
+     <input type="text" ng-model="value" class="form-control"/>
+     <div>
+      <h1 id="main_text" ng-class="{prime: isPrime()}">Not Prime</h1>
+   </div>
+  </div>
+
+  <h5>Click <a href="http://bryceyoung.me/blog/learning-angularjs/#prime">here</a> to see how this was made.</h5>
+</body>
+</html>
+

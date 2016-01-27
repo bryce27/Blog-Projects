@@ -1,0 +1,33 @@
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+input {
+	font-size: 5em;
+}
+
+* {
+	border: 0;
+	text-align: center;
+}
+
+body {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -20%);
+
+}
+
+#result_container {
+	margin-top: 100px;
+}
+
+p {
+	font-size: 5em;
+}

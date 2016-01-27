@@ -1,0 +1,16 @@
+.prime {
+	color: #398C51;
+}
+
+body {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -20%);
+  color: #8C0001;
+}
+
+#main_text {
+	text-align: center;
+}

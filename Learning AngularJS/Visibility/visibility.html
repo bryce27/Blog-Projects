@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+	<script src="sources/angular.min.js"></script>
+	<script src="js/visibility.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>$(document).ready(function(){
+		$('[data-toggle="popover"]').popover(); 
+	});
+	</script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body ng-app="myapp">
+	<div class="container">
+
+		<h1>Riddles - Verified by Checkmarks</h1>
+
+		<div ng-controller="index">
+
+			<p><strong>1. </strong><span class="pad_right">What is so delicate that even mentioning it breaks it?</span><input type="text" ng-model="value1" class="form-horizontal"/><i ng-show="isCorrect()" class="fa fa-check fa-2x green"></i><a href="#" data-toggle="popover"  data-content="Starts with 's'" data-placement="top" data-trigger="hover" ng-show="isTyping1">Hint?</a></p>
+
+			<p><strong>2. </strong><span class="pad_right">I have Eighty-eight keys but cannot open a single door?</span><input type="text" ng-model="value2" class="form-horizontal"/><i ng-show="isCorrect2()" class="fa fa-check fa-2x green"></i><a href="#" data-toggle="popover"  data-content="The keys are black and white" data-placement="top" data-trigger="hover" ng-show="isTyping2">Hint?</a></p>
+
+			<p><strong>3. </strong><span class="pad_right">The more of them you take, the more you leave behind. What are they?</span><input type="text" ng-model="value3" class="form-horizontal"/><i ng-show="isCorrect3()" class="fa fa-check fa-2x green"></i><a href="#" data-toggle="popover"  data-content="They can be left in the sand pretty easily" data-placement="top" data-trigger="hover" ng-show="isTyping3">Hint?</a></p>
+
+			<p><strong>4. </strong> <span class="pad_right">What word looks the same upside down and backwards?</span><input type="text" ng-model="value4" class="form-horizontal"/><i ng-show="isCorrect4()" class="fa fa-check fa-2x green"></i><a href="#" data-toggle="popover"  data-content="Involves water" data-placement="top" data-trigger="hover" ng-show="isTyping4">Hint?</a></p>
+
+			<p id="note">* A checkmark will appear when you get it right</p>
+
+			<div id="messages" ng-show="allCorrect()" >Great Job!</div>
+
+		</div>
+
+	</div> 
+
+</body>
+
+</html>

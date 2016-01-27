@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <script type="text/javascript">
+  // select text box for user input
+  window.onload = function(){
+    var text_input = document.getElementById ('myTextInput');
+    text_input.focus ();
+    text_input.select ();
+  }
+  </script>
+  <script src="sources/jquery-1.11.3.js"></script>
+  <script src="sources/angular.min.js"></script>
+  <script src="myapp.js"></script>
+  <link rel="stylesheet" type="text/css" href="sources/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="myapp">
+ <div ng-controller="index">
+   <input type="text" ng-model="value" id="myTextInput">
+   <div id="result_container">
+    <p id="result">{{product}}</p>
+  </div>
+</div>
+
+</body>
+</html>
+
